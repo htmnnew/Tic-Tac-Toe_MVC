@@ -49,6 +49,8 @@ public class GameBean {
 	 */
 	public int getGamestate() {
 	//check game state and return
+
+	//checking for O win
 		//check rows
 		if(board[0] == 0 && board[1] == 0 && board[2] == 0) {
 			this.gamestate = 0;
@@ -84,6 +86,7 @@ public class GameBean {
 			this.gamestate = 0;
 			return this.gamestate;
 		}
+	//checking for X win
 		//check rows
 		if(board[0] == 1 && board[1] == 1 && board[2] == 1) {
 			this.gamestate = 1;
